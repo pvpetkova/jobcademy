@@ -1,0 +1,63 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.btn-primary {
+    background-color: #6633ff;
+    border-radius: 20px;
+    border-color: #6633ff;
+    padding: .2rem 2rem .3rem 2rem;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover,
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #5f31ce;
+    border-color: #5f31ce;
+}
+
+.btn-primary:focus {
+    background-color: #5f31ce;
+    border-color: #5f31ce;
+    box-shadow: none;
+}
+
+.btn-outline-primary {
+    border-radius: 20px;
+    border-color: #6633ff;
+    padding: .2rem 2rem .3rem 2rem;
+    text-transform: uppercase;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:not(:disabled):not(.disabled):active {
+    border-color: #5f31ce;
+}
+
+.btn-outline-primary:focus {
+    border-color: #5f31ce;
+    box-shadow: none;
+}
+
+.card {
+    padding: 1rem;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+.list-group-item {
+    padding: 0.5rem 1.25rem;
+}
+
+.icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: -3px;
+}
+
+.pricing-header {
+    max-width: 700px;
+}

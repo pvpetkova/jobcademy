@@ -3,14 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <title>Изберете тип регистрация</title>
-    <link type="text/css" rel="stylesheet" href="styles/main-style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="styles/main-style.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
 </head>
 <body>
-<h1>Изберете тип на регистрацията</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+    <a class="navbar-brand" href="#">jobcademy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">За нас <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Спонсори</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">За контакт</a>
+            </li>
+        </ul>
+        <button class="btn btn-primary my-2 my-sm-0">Регистрация</button>
+        <button type="button" class="btn">Вход</button>
+    </div>
+</nav>
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Pricing</h1>
+    <p class="lead">Quickly build an effective pricing table for your
+        potential customers with this Bootstrap example. It’s built with default
+        Bootstrap components and utilities with little customization.</p>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-sm-4">
+            <div class="card mb-2 shadow-sm text-center">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold mb-4"><img src="assets/agenda.svg" class="icon mr-3">Потребител</h5>
+                    <p class="card-text text-secondary">Описание на потребител...някой да
+                        го измисли моля, имам 1 мозъчна клетка</p>
+                    <ul class="list-group list-group-flush mb-2">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                    <button type="button" class="btn btn-primary">Регистрация</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card mb-2 shadow-sm text-center">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold mb-4"><img src="assets/business.svg" class="icon mr-3">Фирма</h5>
+                    <p class="card-text text-secondary">Описание на потребител...някой да
+                        го измисли моля, имам 1 мозъчна клетка</p>
+                    <ul class="list-group list-group-flush mb-2">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                    <button type="button" class="btn btn-primary">Регистрация</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
