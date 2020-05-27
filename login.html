@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="styles/main-style.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+    <a class="navbar-brand" href="index.html">jobcademy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">За нас <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Спонсори</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">За контакт</a>
+            </li>
+        </ul>
+        <button class="btn btn-primary my-2 my-sm-0">Регистрация</button>
+        <button type="button" class="btn">Вход</button>
+    </div>
+</nav>
+<div class="header">
+    <h1>Вход</h1>
+</div>
+<div class="box3">
+    <table cellpadding=3 cellspacing=0 width="90%" height="30%" style="margin-top: 5%; margin-left: 5%">
+        <tr>
+            <td class="labels">Потребителско име: </td>
+        </tr>
+        <tr>
+            <td><input class="boxes" type="text" name="user-name" id="username"></td>
+        </tr>
+        <tr>
+            <td class="labels">Парола: </td>
+        </tr>
+        <tr>
+            <td><input class="boxes" type="password" name="passwd" id="password"></td>
+        </tr>
+        <tr>
+            <td><label style="margin-left: 2%; color: #ff0000; display: none" id="invalidCredentials"> Невалидни потребителско и/или парола. </label></td>
+        </tr>
+    </table>
+    <button type="button" class="btn btn-primary" style="margin-left: 36%; margin-top: 40px" onmousedown="login()" ontouchstart="login()">Вход</button>
+</div>
+
+
+<script>
+
+    function login() {
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+        if (username == "admin" && password == "admin") {
+            console.log("go to admin page");
+        } else if (username == "pesho" && password == "1234") {
+            console.log("go to user page");
+        } else {
+            document.getElementById("invalidCredentials").style.display = "inline";
+        }
+    }
+</script>
+</body>
+</html>
