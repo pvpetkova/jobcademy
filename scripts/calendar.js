@@ -19,6 +19,7 @@ function getCalendar(date) {
     let tbl = document.createElement("table");
     tbl.style.width = '100%';
     tbl.style.height = '100%';
+    tbl.style.borderSpacing = '0px';
 
 
     let tbody = document.createElement("tbody");
