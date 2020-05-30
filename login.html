@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Регистрация</title>
+    <title>Вход</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="styles/main-style.css">
@@ -30,7 +30,9 @@
                 <a class="nav-link" href="#">За контакт</a>
             </li>
         </ul>
-        <button class="btn btn-primary my-2 my-sm-0">Регистрация</button>
+        <a href="choose-register-type.html">
+            <button type="button" class="btn btn-primary">Регистрация</button>
+        </a>
         <button type="button" class="btn">Вход</button>
     </div>
 </nav>
@@ -40,22 +42,25 @@
 <div class="box3">
     <table cellpadding=3 cellspacing=0 width="90%" height="30%" style="margin-top: 5%; margin-left: 5%">
         <tr>
-            <td class="labels">Потребителско име: </td>
+            <td class="labels">Потребителско име:</td>
         </tr>
         <tr>
             <td><input class="boxes" type="text" name="user-name" id="username"></td>
         </tr>
         <tr>
-            <td class="labels">Парола: </td>
+            <td class="labels">Парола:</td>
         </tr>
         <tr>
             <td><input class="boxes" type="password" name="passwd" id="password"></td>
         </tr>
         <tr>
-            <td><label style="margin-left: 2%; color: #ff0000; display: none" id="invalidCredentials"> Невалидни потребителско и/или парола. </label></td>
+            <td><label style="margin-left: 2%; color: #ff0000; display: none" id="invalidCredentials"> Невалидни
+                потребителско и/или парола. </label></td>
         </tr>
     </table>
-    <button type="button" class="btn btn-primary" style="margin-left: 36%; margin-top: 40px" onmousedown="login()" ontouchstart="login()">Вход</button>
+    <button type="button" class="btn btn-primary" style="margin-left: 36%; margin-top: 40px" onmousedown="login()"
+            ontouchstart="login()">Вход
+    </button>
 </div>
 
 
@@ -64,10 +69,10 @@
     function login() {
         let username = document.getElementById("username").value;
         let password = document.getElementById("password").value;
-        if (username == "admin" && password == "admin") {
+        if (username === "admin" && password === "admin") {
             console.log("go to admin page");
-        } else if (username == "pesho" && password == "1234") {
-            console.log("go to user page");
+        } else if (username === "pesho" && password === "1234") {
+            window.location = "course-dashboard.html"
         } else {
             document.getElementById("invalidCredentials").style.display = "inline";
         }

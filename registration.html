@@ -31,41 +31,42 @@
             </li>
         </ul>
         <button class="btn btn-primary my-2 my-sm-0">Регистрация</button>
-        <button type="button" class="btn">Вход</button>
+        <a type="button" class="btn" href="login.html">Вход</a>
     </div>
 </nav>
 <div class="header">
     <h1>Регистрация</h1>
 </div>
 <div class="box1">
-    <table cellpadding=3 cellspacing=0 width="90%" height="65%" style="margin-top: 5%; margin-left: 5%">
+    <table cellpadding=3 cellspacing=0 width="90%" style="margin-top: 5%; margin-left: 5%">
         <tr>
             <td class="labels">Потребителско име: </td>
         </tr>
         <tr>
-            <td><input class="boxes" type="text" name="user-name"></td>
+            <td><input class="boxes" type="text" name="user-name" id="user-name"></td>
         </tr>
         <tr>
             <td class="labels">Email: </td>
         </tr>
         <tr>
-            <td><input class="boxes" type="text" name="email"></td>
+            <td><input class="boxes" type="text" name="email" id="email"></td>
         </tr>
         <tr>
             <td class="labels">Парола: </td>
         </tr>
         <tr>
-            <td><input class="boxes" type="password" name="passwd"></td>
+            <td><input class="boxes" type="password" name="passwd" id="passwd"></td>
         </tr>
         <tr>
             <td class="labels">Повторете паролата: </td>
         </tr>
         <tr>
-            <td><input class="boxes" type="password" name="passwd-repeat"></td>
+            <td><input class="boxes" type="password" name="passwd-repeat" id="passwd-repeat"></td>
         </tr>
     </table>
     <label style="margin-left: 5%"><input type="checkbox">Съгласен съм с общите условия*</label>
-    <button type="button" class="btn btn-primary" style="margin-left: 28%; margin-top: 10px">Регистрация</button>
+    <button type="button" class="btn btn-primary mb-1" style="margin-left: 30%; margin-top: 10px">Регистрация</button>
+    <div class="mb-1" style="text-align: center">Вече имате профил? <a href="login.html">Вход</a></div>
 </div>
 </body>
 </html>
