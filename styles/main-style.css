@@ -88,8 +88,8 @@ body {
     margin: auto;
     width: 400px;
     height: 300px;
-    border: solid 1px rgb(241,241,241);
-    background: rgba(172,147,248, 0.5);
+    border: solid 1px rgb(241, 241, 241);
+    background: rgba(172, 147, 248, 0.5);
 }
 
 .header {
@@ -196,17 +196,33 @@ a:hover, a:active, a:focus {
     position: relative;
     top: 25%;
 }
+
 input:focus {
     border: 1px solid #381978;
 }
 
-
 .main-box {
-    background-color: rgba(172,147,248, 0.6);
-    height: 800px;
-    width: 50%;
+    background-color: rgba(172, 147, 248, 0.6);
+    height: 200px;
+    width: 100%;
     margin: auto;
-    border-left: solid #6633ff;
-    border-right: solid #6633ff;
 }
 
+.welcome {
+    color: #353535;
+    font-size: 62px;
+}
+
+.subtitle {
+    padding: 10px 20px;
+    color: #201040;
+    width: 33%;
+    font-weight: bold;
+    text-align: center
+}
+
+.desc {
+    color: #464646;
+    padding: 0 20px;
+    text-align: center;
+}
