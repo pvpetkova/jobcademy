@@ -1,12 +1,22 @@
 .active-day {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: rgb(29, 77, 126) !important;
+    z-index: 10;
+}
+
+.active-day:after {
+    display: block;
+    position: absolute;
     content: '';
     height: 30px;
     width: 30px;
-    background-color: rgba(51, 153, 255, 0.5);
+    background-color: rgba(51, 153, 255, 0.4);
     border-radius: 50%;
     z-index: -1;
-    text-align: center;
-    overflow: hidden;
+    top: -3px;
+    left: -6px;
 }
 
 .inactive-day {
@@ -16,8 +26,8 @@
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     z-index: -1;
-    text-align: center;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .input-calendar {
@@ -37,4 +47,13 @@
     vertical-align: bottom;
     text-align: right;
     color: #ac93f8;
+}
+
+.calendar-day {
+    z-index: 1;
+}
+
+a.calendar-day:hover,
+a.calendar-day:focus {
+    color: #6633ff;
 }

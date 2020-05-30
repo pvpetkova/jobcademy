@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course overview</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="styles/main-style.css">
+    <link type="text/css" rel="stylesheet" href="styles/menu-bar-items.css">
+    <link type="text/css" rel="stylesheet" href="styles/course-dashboard.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+    <a class="navbar-brand" href="index.html">jobcademy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">За нас <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Моите курсове</a>
+            </li>
+        </ul>
+        <div class="dropdown">
+            <img src="assets/chat2.png" class="icon mr-3" style="opacity: 0.4">
+            <div class="dropdown-content">
+                <div class="card">
+                    <div class="card-header" style="background: rgba(172,147,248, 0.5);">
+                        Съобщения
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div>Мария П.</div>
+                            <div class="text-muted">Ново съобщение...</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div>Иван Д.</div>
+                            <div class="text-muted">Ново съобщение...</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <img src="assets/profile.png" class="icon mr-3" style="opacity: 0.4">
+            <div class="dropdown-content">
+                <a style="text-align: center">Име</a>
+                <hr>
+                <a style="text-align: center">Настройки</a>
+                <hr>
+                <a style="text-align: center">Изход</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-auto">
+            <button class="btn btn-primary my-2 my-sm-0">Моите курсове</button>
+        </div>
+        <div class="col-md-auto">
+            <a type="button" class="btn btn-outline-primary mb-2" href="calendar.html">Календар
+            </a>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="dashboard-menu">
+                        <span style="margin-right: 90px;">
+            <a class="menu-item" href="signed-up.html">Записани</a>
+            <a class="menu-item active">Предстоящи</a>
+            <a class="menu-item" href="pending.html">Кандидатствания</a>
+                        </span>
+            <a class="menu-item alt">Филтър</a>
+            <a class="menu-item alt">Сортирай по:</a>
+        </div>
+    </div>
+    <div class="row row-cols-4">
+        <div class="card course-card">
+            <img src="assets/java.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: 18px">Програмиране на Java 101 (начинаещи)</h5>
+                <div class="course-time">
+                    <img src="assets/calendar.svg" class="icon-small"><span
+                        class="card-subtitle mb-2 text-muted">12.06.2020</span>
+                    <img src="assets/wall-clock.svg" class="icon-small ml-3"><span
+                        class="card-subtitle mb-2 text-muted">18:30</span>
+                </div>
+            </div>
+        </div>
+        <div class="card course-card">
+            <img src="assets/web.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">WEB Програмиране – HTML, CSS, JS</h5>
+                <div class="course-time">
+                    <img src="assets/calendar.svg" class="icon-small"><span
+                        class="card-subtitle mb-2 text-muted">18.07.2020</span>
+                    <img src="assets/wall-clock.svg" class="icon-small ml-3"><span
+                        class="card-subtitle mb-2 text-muted">18:00</span>
+                </div>
+            </div>
+        </div>
+        <div class="card course-card">
+            <img src="assets/How-to-Learn-Python.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Въведение в програмирането с Python</h5>
+                <div class="course-time">
+                    <img src="assets/calendar.svg" class="icon-small"><span
+                        class="card-subtitle mb-2 text-muted">28.06.2020</span>
+                    <img src="assets/wall-clock.svg" class="icon-small ml-3"><span
+                        class="card-subtitle mb-2 text-muted">18:00</span>
+                </div>
+            </div>
+        </div>
+        <div class="card course-card">
+            <img src="assets/index.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Автоматизирано софтуерно тестване</h5>
+                <div class="course-time">
+                    <img src="assets/calendar.svg" class="icon-small"><span
+                        class="card-subtitle mb-2 text-muted">25.07.2020</span>
+                    <img src="assets/wall-clock.svg" class="icon-small ml-3"><span
+                        class="card-subtitle mb-2 text-muted">19:15</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <span>1</span>
+    </div>
+</div>
+</body>
+</html>

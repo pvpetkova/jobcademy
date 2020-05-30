@@ -1,0 +1,10 @@
+.fixed-sidebar {
+    position: fixed;
+}
+
+.teacher-info {
+    position: relative;
+    left: 65px;
+    top: -60px;
+    max-width: 170px;
+}

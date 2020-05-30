@@ -1,0 +1,38 @@
+.dashboard-menu {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    padding: 6px 10px;
+    margin: 20px 20px;
+    color: #666666;
+}
+
+.menu-item.active {
+    color: #666666;
+    font-weight: 700;
+    border-bottom: 2px solid #6633ff;
+}
+
+a.menu-item {
+    color: #666666;
+    cursor: pointer;
+}
+
+a.menu-item:hover,
+a.menu-item:focus {
+    color: #464646;
+    text-decoration: none;
+}
+
+.menu-item.alt {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+a.menu-item.alt:hover,
+a.menu-item.alt:focus {
+    color: #464646;
+    text-decoration: underline;
+}

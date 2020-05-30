@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="styles/main-style.css">
+    <link type="text/css" rel="stylesheet" href="styles/course-overview.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
@@ -30,25 +31,21 @@
         <div class="dropdown">
             <img src="assets/chat2.png" class="icon mr-3" style="opacity: 0.4">
             <div class="dropdown-content">
-                <div style="background: rgba(172,147,248, 0.5);">
-                    <a>Messages</a>
+                <div class="card">
+                    <div class="card-header" style="background: rgba(172,147,248, 0.5);">
+                        Съобщения
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div>Мария П.</div>
+                            <div class="text-muted">Ново съобщение...</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div>Иван Д.</div>
+                            <div class="text-muted">Ново съобщение...</div>
+                        </li>
+                    </ul>
                 </div>
-                <table class="message-table">
-                    <tr>
-                        <td rowspan="2">
-                            <img src="assets/profile.png" class="icon mr-3" style="opacity: 0.4; padding-left: 10%; padding-top: 10%">
-                        </td>
-                        <td>Име 1</td>
-                    </tr>
-                    <tr><td>Съобщение 1</td></tr>
-                    <tr>
-                        <td rowspan="2">
-                            <img src="assets/profile.png" class="icon mr-3" style="opacity: 0.4; padding-left: 10%; padding-top: 10%">
-                        </td>
-                        <td>Име 2</td>
-                    </tr>
-                    <tr><td>Съобщение 2</td></tr>
-                </table>
             </div>
         </div>
         <div class="dropdown">
@@ -66,98 +63,73 @@
 <div class="header">
     <h1>Програмиране 101 (начинаещи)</h1>
 </div>
-<table style="width: 100%">
-    <tr>
-        <td style="width: 25%; height: 100%;">
-            <div style="margin-left: 50px">
-                <table style="margin-bottom: 0px; margin-left: 40%">
-                    <tr>
-                        <td align="center">
-                            <div class="dropdown">
-                                <img src="assets/image.png" style="opacity: 0.6; height: 100px; width: 100px; position: relative; margin: auto">
-                                <div class="dropdown-content" style="transform: translateX(-19%);">
-                                    <a>Преподавател</a>
-                                    <hr>
-                                    <a>Длъжност</a>
-                                    <hr>
-                                    <a>Компетенции</a>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="width: 100%" >
-                        <td colspan="2" align="center" style="padding-top: 20px">
-                            <div class="course-content">
-                                <p style="background: rgba(172,147,248, 0.5);">Съдържание на курса</p>
-                                <p>Тема 1</p>
-                                <p>Тема 2</p>
-                                <p>Тема 3</p>
-                                <p>Тема 4</p>
-                                <p>Тема 5</p>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-sm" style="width: 18rem; top: 20px">
+            <div class="card" style="width: 18rem; padding: 10px; margin-bottom: 20px;">
+                <div class="card-body">
+                    <img src="assets/image.png" style="height: 50px; width: 50px;">
+                    <div class="teacher-info">
+                        <span class="card-title" style="font-size: 18px">Мартин Георгиев</span>
+                        <br>
+                        <span class="card-subtitle mb-2 text-muted">Senior Java Developer, РилаСофт</span>
+                    </div>
+                    <p class="card-text" style="position: relative; top: -40px;">Some quick example text to build on
+                        the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="card-link">Съобщение</a>
+                    <a href="#" class="card-link">LinkedIn</a>
+                </div>
             </div>
-        </td>
-        <td style="width: 50%">
-            <div>
-                <table cellpadding=0 cellspacing=0 width="90%" height="65%" style="margin-left: 5%">
-                    <tr>
-                        <td class="labels">Описание на курса: </td>
-                    </tr>
-                    <tr>
-                        <td class="box2"></td>
-                    </tr>
-                    <tr>
-                        <td class="labels">Изисквания към кандидата: </td>
-                    </tr>
-                    <tr>
-                        <td class="box2"></td>
-                    </tr>
-                    <tr>
-                        <td class="labels">Цели на курса: </td>
-                    </tr>
-                    <tr>
-                        <td class="box2"></td>
-                    </tr>
-                </table>
+            <div class="card">
+                <div class="card-header">
+                    Съдържание на курса
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Тема 1: Какво е програмист?</li>
+                    <li class="list-group-item">Тема 2: Трябва ли ми IDE?</li>
+                    <li class="list-group-item">Тема 3: VSC и защо да ги използваме</li>
+                </ul>
             </div>
-        </td>
-        <td style="width: 25%">
-            <div>
-                <table style="margin-left: 10px;">
-                    <tr>
-                        <td>
-                            <p>Начална дата:</p>
-                            <p>Свободни места:</p>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button type="button" class="btn" style="border: solid; color: #5f31ce; border-radius: 25px">Изпрати запитване</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button class="btn btn-primary my-2 my-sm-0">Запиши ме!</button>
-                        </td>
-                    </tr>
-                </table>
+        </div>
+        <div class="col-7">
+            <div class="labels">Описание на курса</div>
+            <div class="box2">Курсът е предназначен основно за студенти,
+                които не са се занимавали с комерсиално програмиране
+                (т.е. не са карали стажове, и не са работили като програмисти).
+                Курсът е с времетраене 6 седмици, в които ще се
+                разгледат 6 теми за начинаещи програмисти.
+                Nam eget tortor nec nulla egestas pharetra iaculis non leo. Sed tellus massa, consequat in quam ut,
+                pellentesque dapibus mi. Morbi elementum accumsan quam a eleifend. Donec quis purus non nunc posuere
+                pharetra vel eu erat.
             </div>
-        </td>
-    </tr>
-</table>
+            <div class="labels">Изисквания към кандидата:</div>
+            <div class="box2">Няма предварителни изисквания за този
+                курс.
+            </div>
+            <div class="labels">Цели на курса:</div>
+            <div class="box2">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Sed diam felis, lacinia at viverra ut, scelerisque at
+                purus. Curabitur eleifend ultricies ipsum, vitae hendrerit
+                mauris iaculis eu. Nullam sit amet sapien ut lectus dignissim
+                posuere accumsan ultricies elit. Fusce purus augue, consequat
+                eget lectus ut, sagittis vestibulum sem.
+            </div>
+        </div>
+        <div class="col">
+            <div class="fixed-sidebar">
+                <p>Начална дата: 08.07.2020</p>
+                <p>Свободни места: 52/100</p>
 
-
+                <div class="buttons" style="bottom: 0">
+                    <button type="button" class="btn mb-2"
+                            style="border: solid; color: #5f31ce; border-radius: 25px">Изпрати запитване
+                    </button>
+                    <button class="btn btn-primary my-2 my-sm-0">Запиши ме!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

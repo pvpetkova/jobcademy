@@ -83,14 +83,14 @@ function getCalendar(date) {
             td.style.height = '30px';
             td.style.width = '30px';
             if (num > 0 && num <= maxDaysInMonth) {
-                let innerDiv = document.createElement("div");
-                innerDiv.className = 'inactive-day';
-                innerDiv.innerHTML = num;
-                td.appendChild(innerDiv);
+                let innerA = document.createElement("a");
+                innerA.className = 'inactive-day calendar-day';
+                innerA.innerHTML = num;
+                td.appendChild(innerA);
                 td.onclick = function () {
-                    currentSelected.childNodes[0].className = 'inactive-day';
+                    currentSelected.childNodes[0].className = 'inactive-day calendar-day';
                     currentSelected = this;
-                    currentSelected.childNodes[0].className = 'active-day';
+                    currentSelected.childNodes[0].className = 'active-day calendar-day';
                     showForDate(this);
                 };
             }
@@ -110,7 +110,7 @@ function getCalendar(date) {
     td1.style.textAlign = 'center';
     td1.colSpan = 2;
     let buttonBack = document.createElement("button");
-    buttonBack.style.background = 'url(assets/arrow-left.png)'
+    buttonBack.style.background = 'url(assets/arrow-left.png)';
     buttonBack.style.height = '40px';
     buttonBack.style.width = '60px';
     buttonBack.style.border = 'none';
@@ -128,7 +128,7 @@ function getCalendar(date) {
     td2.style.textAlign = 'center';
     td2.colSpan = 2;
     let buttonForward = document.createElement("button");
-    buttonForward.style.background = 'url(assets/arrow-right.png)'
+    buttonForward.style.background = 'url(assets/arrow-right.png)';
     buttonForward.onclick = nextMonth;
     buttonForward.style.height = '40px';
     buttonForward.style.width = '60px';
