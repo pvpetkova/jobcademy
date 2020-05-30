@@ -3,6 +3,49 @@ let currentDate = new Date();
 let currentSelected = null;
 setDate(currentDate);
 tableCell.appendChild(getCalendar(currentDate));
+const courseName = 'Програмиране 101 (Начинаещи)'
+
+function addCourseHours(date) {
+    let dayOfWeek = date.getDay();
+
+    cleanHours();
+
+    if (dayOfWeek === 1) {
+        let input11 = document.getElementById("input-11");
+        let input12 = document.getElementById("input-12");
+        input11.value = courseName;
+        input12.value = courseName;
+        input11.className = 'input-calendar-with-course';
+        input12.className = 'input-calendar-with-course';
+        input11.onclick = redirectToCourse;
+        input12.onclick = redirectToCourse;
+    }
+    if (dayOfWeek === 4) {
+        let input14 = document.getElementById("input-14");
+        let input15 = document.getElementById("input-15");
+        input14.value = courseName;
+        input15.value = courseName;
+        input14.className = 'input-calendar-with-course';
+        input15.className = 'input-calendar-with-course';
+        input14.onclick = redirectToCourse;
+        input15.onclick = redirectToCourse;
+    }
+}
+
+function cleanHours(){
+    let old = document.getElementsByClassName("input-calendar-with-course");
+    while (old.length > 0) {
+        old[0].value = '';
+        old[0].className = 'input-calendar';
+    }
+}
+
+addCourseHours(currentDate);
+
+function redirectToCourse(){
+    cleanHours();
+    location.href = 'course-overview.html';
+}
 
 function getCalendar(date) {
     let monthArray = ['Януари', 'Февруари', 'Март', 'Април',
@@ -197,7 +240,9 @@ function formatDate(date) {
 
 function showForDate(tableCell) {
     let current = tableCell.childNodes[0].innerHTML;
-    setDate(new Date(currentDate.getFullYear(), currentDate.getMonth(), current));
+    let date = new Date(currentDate.getFullYear(), currentDate.getMonth(), current);
+    addCourseHours(date);
+    setDate(date);
 }
 
 function setDate(date) {

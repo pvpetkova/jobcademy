@@ -31,6 +31,7 @@
 }
 
 .input-calendar {
+    pointer-events: none;
     width: 100%;
     min-width: 100px;
     max-width: 100%;
@@ -39,6 +40,26 @@
     border-right: none;
     border-top: none;
     border-bottom: #949494 solid 2px;
+}
+
+.input-calendar-with-course{
+    width: 100%;
+    min-width: 100px;
+    max-width: 100%;
+    height: 60px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: #949494 solid 2px;
+    background-color: #ac93f8;
+}
+
+.input-calendar:focus {
+    outline: none;
+}
+
+.input-calendar:active {
+    outline: none;
 }
 
 .hours-calendar {
