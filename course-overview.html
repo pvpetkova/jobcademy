@@ -115,14 +115,21 @@
                 <p>Свободни места: 52/100</p>
 
                 <div class="buttons" style="bottom: 0; margin-top: 130px">
-                    <button type="button" class="btn btn-outline-primary tn-block mb-2">
+                    <button type="button" class="btn btn-outline-primary tn-block mb-2" id="message">
                         Изпрати запитване
                     </button>
-                    <button class="btn btn-block btn-primary my-2 my-sm-0">Запиши ме!</button>
+                    <button class="btn btn-block btn-primary my-2 my-sm-0" id="signUp">Запиши ме!</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
 </body>
+<script>
+    let userType = sessionStorage.getItem('userType');
+    if(userType === 'admin'){
+        document.getElementById("message").style.visibility = 'hidden';
+        document.getElementById("signUp").style.visibility = 'hidden';
+    }
+</script>
 </html>
