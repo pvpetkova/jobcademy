@@ -226,3 +226,11 @@ input:focus {
     padding: 0 20px;
     text-align: center;
 }
+
+.course-card-title {
+    margin-bottom: .75rem !important;
+    font-size: 1.25rem !important;
+    line-height: 1.2 !important;
+    font-weight: 500 !important;
+    color: #212529 !important;
+}
