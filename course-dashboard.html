@@ -78,15 +78,56 @@
             <a class="menu-item active">Предстоящи</a>
             <a class="menu-item" href="pending.html">Кандидатствания</a>
                         </span>
-            <a class="menu-item alt">Филтър</a>
-            <a class="menu-item alt">Сортирай по:</a>
+            <div class="dropdown">
+                <a class="menu-item alt">Филтър</a>
+                <div class="dropdown-content" style="position: absolute; left: 120px">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item mt-1">
+                                <input type="checkbox" id="beginner" name="beginner">
+                                <label for="beginner"> За начинаещи</label>
+                            </li>
+                            <li class="list-group-item mt-1">
+                                <input type="checkbox" id="advanced" name="advanced">
+                                <label for="advanced"> За напреднали</label>
+                            </li>
+                            <li class="list-group-item mt-1">
+                                <input type="checkbox" id="free" name="free">
+                                <label for="free"> Има свободни места</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="menu-item alt">Сортирай по:</a>
+                <div class="dropdown-content" style="position: absolute; left: 120px">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item mt-1">
+                                <input type="checkbox" id="date-asc" name="date-asc">
+                                <label for="date-asc"> Начална дата - възх.</label>
+                            </li>
+                            <li class="list-group-item mt-1">
+                                <input type="checkbox" id="date-desc" name="date-desc">
+                                <label for="date-desc"> Начална дата - низх.</label>
+                            </li>
+                            <li class="list-group-item mt-1">
+                                <input type="checkbox" id="alphabetical" name="alphabetical">
+                                <label for="alphabetical"> По азбучен ред</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row row-cols-4">
         <div class="card course-card">
             <img src="assets/java.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <a href="course-overview.html"><h5 class="card-title" style="font-size: 18px">Програмиране на Java 101
+                <a href="course-overview.html"><h5 class="card-title course-card-title" style="font-size: 18px">
+                    Програмиране на Java 101
                     (начинаещи)</h5></a>
                 <div class="course-time">
                     <img src="assets/calendar.svg" class="icon-small"><span
