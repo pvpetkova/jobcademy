@@ -2,18 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Предстоящи курсове</title>
+    <title>Jobcademy</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="styles/main-style.css">
-    <link type="text/css" rel="stylesheet" href="styles/menu-bar-items.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
-    <a class="navbar-brand" href="index-registered.html">jobcademy</a>
+    <a class="navbar-brand" href="#">jobcademy</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,7 +24,7 @@
                 <a class="nav-link" href="#">За нас <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Моите курсове</a>
+                <a class="nav-link" onclick="myCourses()">Моите курсове</a>
             </li>
         </ul>
         <div class="dropdown">
@@ -60,36 +59,43 @@
         </div>
     </div>
 </nav>
-<div class="container">
-    <div class="row justify-content-center mt-5">
-        <div class="col-md-auto">
-            <button class="btn btn-primary my-2 my-sm-0">Моите курсове</button>
-        </div>
-        <div class="col-md-auto">
-            <a type="button" class="btn btn-outline-primary mb-2" href="calendar.html">Календар </a>
-        </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="dashboard-menu">
-            <span style="margin-right: 90px;">
-                <a class="menu-item" href="current-courses.html">Текущи</a>
-                <a class="menu-item active">Предстоящи</a>
-                <a class="menu-item" href="completed-courses.html">Минали</a>
-            </span>
-            <a class="menu-item alt">Филтър</a>
-            <a class="menu-item alt">Сортирай по:</a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <div class="card message-card justify-content-center">
-                <div class="card-body message-text">
-                    <p>В момента нямате активни курсове </p>
-                    <a class="btn btn-primary my-2 my-sm-0" href="#">Добави Курс</a>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="main-box">
+    <table style="margin: auto;">
+        <tr>
+            <td><img src="assets/innovation.png" style="width: 120px; height: 120px; margin-top: 35px"></td>
+            <td>
+                <h1 class="display-4 mt-4 ml-3">Добре дошли в Jobcademy!</h1>
+                <p class="lead ml-3">ala bala</p>
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="margin-top: 20px">
+    <table style="width: 60%; margin: auto">
+        <tr>
+            <td style="padding: 0 20px" align="center"><img src="assets/elearn.png" style="width: 70px; height: 70px; opacity: 80%"></td>
+            <td style="padding: 0 20px" align="center"><img src="assets/job-search.png" style="width: 70px; height: 70px; opacity: 80%"></td>
+            <td style="padding: 0 20px" align="center"><img src="assets/certificate.png" style="width: 70px; height: 70px; opacity: 80%"></td>
+        </tr>
+        <br>
+        <tr>
+            <td class="subtitle">Онлайн курсове</td>
+            <td class="subtitle">Възможности за работа</td>
+            <td class="subtitle">Сертификати</td>
+        </tr>
+        <tr style="vertical-align: top">
+            <td class="desc">Открийте широка гама от безплатно обучително съдържание, предоставено от фирми, търсещи
+                нови служители
+            </td>
+            <td class="desc">С успешното завършване на курс ще получите ценни умения и знания и ще имате шанс за
+                професионално развитие в съответната фирма
+            </td>
+            <td class="desc">Доброто представяне на курса гарантира получаване на сертификат, който ще допълни вашето CV
+                и ще Ви помогне при търсенето на работа
+            </td>
+        </tr>
+    </table>
 </div>
 </body>
+<script src="scripts/script.js"/>
 </html>
