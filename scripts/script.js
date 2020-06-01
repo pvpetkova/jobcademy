@@ -1,29 +1,23 @@
-let userType;
-
-function setUserType(ut) {
-    userType = ut;
-}
-
-
 function login() {
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
     if (username === "admin" && password === "admin") {
-        setUserType(0);
+        sessionStorage.setItem('userType', 'admin');
         window.location = "current-courses.html";
     } else if (username === "pesho" && password === "1234") {
-        setUserType(1);
+        sessionStorage.setItem('userType', 'user');
         window.location = "course-dashboard.html";
     } else {
         document.getElementById("invalidCredentials").style.display = "inline";
     }
 }
 
-function myCourses(){
-    if(userType === 0){
+function myCourses() {
+    let userType = sessionStorage.getItem('userType');
+    if (userType === 'admin') {
         window.location = 'current-courses.html';
     }
-    if(userType === 1){
+    if (userType === 'user') {
         window.location = 'course-dashboard.html'
     }
 }
