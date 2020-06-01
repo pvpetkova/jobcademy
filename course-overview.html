@@ -129,7 +129,12 @@
     let userType = sessionStorage.getItem('userType');
     if(userType === 'admin'){
         document.getElementById("message").style.visibility = 'hidden';
-        document.getElementById("signUp").style.visibility = 'hidden';
+        let signUpButton = document.getElementById("signUp");
+        signUpButton.innerText = "Кандидатури";
+        signUpButton.onclick = function () {
+          //dobavi si tuk stranicata na mqstoto na kandidaturi.html
+           window.location = "kandidaturi.html";
+        };
     }
 </script>
 </html>
